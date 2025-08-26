@@ -13,19 +13,40 @@
     */
 
     //ENTRADA
-     let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
-     let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
-     let carrosHatch = ["308", "Focus", "i30"];
-     const carro = Number(prompt("promptinclua mais 3 carros, os tres sendo de uma marca especifica. (1-Suv, 2-Sedan, 3-Hatch)"));
-     const c1 = prompt("inclua 1 carro, (da marca especifica que vc pediu)");
-     const c2 = prompt("inclua mais 1 carro, (da marca especifica que vc pediu)");
-     const c3 = prompt("inclua mais 1 carro, (da marca especifica que vc pediu)");
-     let errei = sabeTudo
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    alert("Tiggo  Sportage, Tucson, EcoSport(S-suv)");
+    alert("Civic, Corolla, Arizzo, Fusion(S-sedan)");
+    alert("308, Focus, i30(Hatch)");
+    const tipo = prompt("Qual tipo de carro (S-suv  SE-sedan  H-hatch)").toUpperCase();
+    const c1 = prompt("adicione o primeiro carro, por favor");
+    const c2 = prompt("adicione o segundo carro, por favor");
+    const c3 = prompt("adicione o terceiro carro, por favor");
+        if (tipo == "S") {
+            carrosSUV.push(c1)
+            carrosSUV.push(c2)
+            carrosSUV.push(c3)}
+            else if (tipo == "SE"){
+                carrosSedan.push(c1)
+                carrosSedan.push(c2)
+                carrosSedan.push(c3)
+            }
+            else if (tipo =="H") {
+                carrosHatch.push(c1)
+                carrosHatch.push(c2)
+                carrosHatch.push(c3)
+        }   else {
+                alert("escolha umas das opções")
+        }
+        alert(carrosSUV);
+        alert(carrosHatch);
+        alert(carrosSedan);
+
+    
+
     //PROCESSAMENTO
 
-    if (sabeTudo === 1) {
-        sabeTudo.push(carrosSUV)
-    }
 
     //SAÍDA
 

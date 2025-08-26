@@ -9,7 +9,15 @@
     */
 
     //ENTRADA
-
+    const p1 = prompt("digite uma palavra, por favor");
+    const l1 = prompt("deseja encontrar qual letra dessa palavra que voce acabou de escrever");
+    let mn = Array.from(p1).lastIndexOf(l1);
+        if (mn == -1) {
+            alert("não foi encontrado nada");
+        }
+        else {
+            alert("foi encontrado a letra " + (mn +1));
+        }
 
     //PROCESSAMENTO
 

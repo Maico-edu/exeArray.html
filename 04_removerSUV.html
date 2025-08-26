@@ -9,9 +9,30 @@
     */
 
     //ENTRADA
+    let carrosSUV1 = ["Tiggo ", "Sportage ", "Tucson ", "EcoSport"];
+    let carrosSUV2 = ["Tiggo ", "Sportage ", "Tucson ", "EcoSport"];
+    const carro = alert("Tiggo, Sportage, Tucson, EcoSport");
+    const tira = prompt("escolha um carro para tirar dessas opcões (T-Tiggo  S-Sportage  TU-Tucson  E-EcoSport)").toUpperCase();
 
 
     //PROCESSAMENTO
+
+    let atual = carrosSUV2;
+    let novo = carrosSUV1;
+        switch(tira) {
+            case "T": carrosSUV1.splice(0, 1);
+            break;
+            case "S": carrosSUV1.splice(1, 1);
+            break;
+            case "TU": carrosSUV1.splice(2, 1);
+            break;
+            case "E": carrosSUV1.splice(3, 1);
+            break;
+            case " ":
+                alert("indisponivel");
+                break;
+        }
+    alert("a lista antiga era: " + atual + " lista atual é: " + novo);
 
 
     //SAÍDA
